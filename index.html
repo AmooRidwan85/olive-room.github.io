@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f4ec">
+  <meta name="description" content="The Olive Room — thoughtful food, beautiful moments, and warm hospitality.">
+  <title>The Olive Room — A Table Worth Sharing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <p>A little taste of something wonderful <span>✳</span> Welcome to The Olive Room</p>
+  </div>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <span class="brand-icon">❧</span>
+        <span>THE OLIVE ROOM<small>FOOD · FRIENDS · MOMENTS</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="navigation">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="#reservation" class="nav-button">Reserve a Table ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=90" alt="Beautifully presented restaurant dining experience">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow light">GOOD FOOD. GOOD COMPANY.</span>
+        <h1>A table worth<br><em>coming back to.</em></h1>
+        <p>Thoughtful food, beautiful moments, and the kind of hospitality that makes everyone feel at home.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-light">Explore our menu ↗</a>
+          <a href="#reservation" class="hero-link">Book your table <span>→</span></a>
+        </div>
+        <div class="hero-location">✳ &nbsp; A place to slow down and savour life.</div>
+      </div>
+      <div class="hero-number">01 — THE OLIVE ROOM</div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro section" id="story">
+      <div class="container intro-grid">
+        <div class="intro-heading reveal">
+          <span class="eyebrow">A WARM WELCOME</span>
+          <h2>More than a meal.<br><em>A feeling.</em></h2>
+        </div>
+        <div class="intro-copy reveal">
+          <p>At The Olive Room, we believe the best moments happen around a table. A shared plate, a familiar face, a new discovery — these are the little things that make life special.</p>
+          <p>Inspired by relaxed Mediterranean dining and the joy of bringing people together, our restaurant concept is all about good ingredients, thoughtful cooking, and genuine hospitality.</p>
+          <a href="#experience" class="text-link">Discover our story ↗</a>
+        </div>
+      </div>
+      <div class="container intro-photo reveal">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1500&q=85" alt="Warm and inviting restaurant interior">
+        <div class="photo-caption">Come as you are. Stay a little longer.</div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu-section section" id="menu">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">MADE WITH CARE</span>
+          <h2>Something delicious<br><em>for every occasion.</em></h2>
+          <p>A selection inspired by seasonal ingredients, comforting favourites, and flavours worth sharing.</p>
+        </div>
+
+        <div class="menu-tabs" id="menuTabs">
+          <button class="menu-tab active" data-menu="all">All favourites</button>
+          <button class="menu-tab" data-menu="starters">Small plates</button>
+          <button class="menu-tab" data-menu="mains">Main dishes</button>
+          <button class="menu-tab" data-menu="desserts">Desserts</button>
+          <button class="menu-tab" data-menu="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-card" data-category="starters">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85" alt="Fresh seasonal salad">
+            <div class="menu-card-info">
+              <div><h3>Garden Burrata</h3><span class="price">₦12,500</span></div>
+              <p>Creamy burrata, ripe tomatoes, basil, and olive oil.</p>
+              <span class="dish-type">SMALL PLATES</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="starters">
+            <img src="https://images.unsplash.com/photo-1547592180-86f0d3a6c0e0?auto=format&fit=crop&w=700&q=85" alt="Fresh vegetable starter">
+            <div class="menu-card-info">
+              <div><h3>Roasted Garden Vegetables</h3><span class="price">₦9,500</span></div>
+              <p>Seasonal vegetables, herbs, and a bright citrus dressing.</p>
+              <span class="dish-type">SMALL PLATES</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=700&q=85" alt="Beautifully plated main course">
+            <div class="menu-card-info">
+              <div><h3>Herb-Roasted Chicken</h3><span class="price">₦22,000</span></div>
+              <p>Golden roasted chicken, seasonal greens, and pan jus.</p>
+              <span class="dish-type">MAIN DISHES</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=85" alt="Fresh pasta dish">
+            <div class="menu-card-info">
+              <div><h3>Wild Mushroom Pasta</h3><span class="price">₦18,500</span></div>
+              <p>Fresh pasta, sautéed mushrooms, parmesan, and herbs.</p>
+              <span class="dish-type">MAIN DISHES</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85" alt="Rich chocolate dessert">
+            <div class="menu-card-info">
+              <div><h3>Chocolate Celebration Cake</h3><span class="price">₦9,000</span></div>
+              <p>Rich chocolate layers with a delicate cream finish.</p>
+              <span class="dish-type">DESSERTS</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=85" alt="Fresh berry dessert">
+            <div class="menu-card-info">
+              <div><h3>Berry Cream Bowl</h3><span class="price">₦7,500</span></div>
+              <p>Fresh berries, soft cream, and a little sweetness.</p>
+              <span class="dish-type">DESSERTS</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=85" alt="Refreshing fruit drink">
+            <div class="menu-card-info">
+              <div><h3>Garden Citrus Cooler</h3><span class="price">₦6,000</span></div>
+              <p>Fresh citrus, garden herbs, and sparkling water.</p>
+              <span class="dish-type">DRINKS</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="drinks">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=85" alt="Freshly brewed coffee">
+            <div class="menu-card-info">
+              <div><h3>House Coffee</h3><span class="price">₦4,500</span></div>
+              <p>Freshly brewed coffee, served just the way you like it.</p>
+              <span class="dish-type">DRINKS</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="menu-disclaimer">Sample menu and prices for this website concept. Actual offerings may vary.</p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience section" id="experience">
+      <div class="container experience-grid">
+        <div class="experience-content reveal">
+          <span class="eyebrow light">THE OLIVE ROOM EXPERIENCE</span>
+          <h2>Stay for the food.<br><em>Remember the feeling.</em></h2>
+          <p>Whether it's a quiet lunch, a long-awaited catch-up, or a special evening, we're creating a space where every visit feels like time well spent.</p>
+          <a href="#reservation" class="btn btn-light">Plan your visit ↗</a>
+        </div>
+        <div class="experience-images reveal">
+          <img class="experience-img-one" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=85" alt="An intimate restaurant table">
+          <img class="experience-img-two" src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?auto=format&fit=crop&w=700&q=85" alt="A fresh dish ready to serve">
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation -->
+    <section class="reservation section" id="reservation">
+      <div class="container reservation-grid">
+        <div class="reservation-copy reveal">
+          <span class="eyebrow">YOUR TABLE IS WAITING</span>
+          <h2>Let's make it<br><em>a lovely occasion.</em></h2>
+          <p>Planning a lunch, dinner, or special get-together? Send us your preferred details and we'll help you plan your visit.</p>
+          <div class="reservation-note">✳ &nbsp; Reservations are subject to confirmation.</div>
+        </div>
+
+        <form class="reservation-form reveal" id="reservationForm">
+          <h3>Reserve a table</h3>
+          <p>Tell us a little about your visit.</p>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="guestName">Your name</label>
+              <input type="text" id="guestName" name="guestName" placeholder="Full name" required>
+            </div>
+            <div class="field">
+              <label for="guestEmail">Email address</label>
+              <input type="email" id="guestEmail" name="guestEmail" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="guestPhone">Phone number</label>
+              <input type="tel" id="guestPhone" name="guestPhone" placeholder="Phone number" required>
+            </div>
+            <div class="field">
+              <label for="guestCount">Guests</label>
+              <select id="guestCount" name="guestCount" required>
+                <option value="">Select guests</option>
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7">7 guests</option>
+                <option value="8">8 guests</option>
+                <option value="9+">9+ guests</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="visitDate">Preferred date</label>
+              <input type="date" id="visitDate" name="visitDate" required>
+            </div>
+            <div class="field">
+              <label for="visitTime">Preferred time</label>
+              <select id="visitTime" name="visitTime" required>
+                <option value="">Select time</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>5:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="guestMessage">Special requests (optional)</label>
+            <textarea id="guestMessage" name="guestMessage" placeholder="Tell us about any special occasion or requests..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-green full-width">Request a reservation ↗</button>
+          <p class="form-footnote">Submitting a request does not guarantee a booking. Our team will need to confirm availability.</p>
+          <p id="reservationMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Hours -->
+    <section class="visit section" id="contact">
+      <div class="container visit-grid">
+        <div class="visit-intro reveal">
+          <span class="eyebrow">COME FIND US</span>
+          <h2>Good things<br><em>happen here.</em></h2>
+          <p>We look forward to welcoming you. Find our sample opening hours and contact details below.</p>
+          <a href="mailto:hello@oliveroom.example" class="text-link">Say hello ↗</a>
+        </div>
+        <div class="hours-card reveal">
+          <h3>Opening hours</h3>
+          <div class="hours-row"><span>Monday – Thursday</span><strong>12 PM – 10 PM</strong></div>
+          <div class="hours-row"><span>Friday</span><strong>12 PM – 11 PM</strong></div>
+          <div class="hours-row"><span>Saturday</span><strong>10 AM – 11 PM</strong></div>
+          <div class="hours-row"><span>Sunday</span><strong>10 AM – 9 PM</strong></div>
+          <div class="hours-location">
+            <span>⌖</span>
+            <div><strong>Find us</strong><p>Restaurant address to be added · Your city</p></div>
+          </div>
+          <div class="hours-location">
+            <span>✉</span>
+            <div><strong>Get in touch</strong><p>hello@oliveroom.example</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="closing">
+      <div class="container closing-content">
+        <span class="eyebrow light">GOOD FOOD BRINGS US TOGETHER</span>
+        <h2>There's always room<br><em>at our table.</em></h2>
+        <a href="#reservation" class="btn btn-light">Reserve your table ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="brand footer-brand">
+          <span class="brand-icon">❧</span>
+          <span>THE OLIVE ROOM<small>FOOD · FRIENDS · MOMENTS</small></span>
+        </a>
+        <p>Thoughtful food. Genuine hospitality. Beautiful everyday moments.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#story">Our story</a>
+        <a href="#menu">The menu</a>
+        <a href="#experience">Our experience</a>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <a href="#reservation">Reservations</a>
+        <a href="#contact">Opening hours</a>
+        <a href="#contact">Location</a>
+      </div>
+      <div>
+        <h4>Say hello</h4>
+        <a href="mailto:hello@oliveroom.example">Email us</a>
+        <a href="#contact">Contact details</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> The Olive Room. Restaurant website concept.</span>
+      <span>Made with warmth. ✳</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
